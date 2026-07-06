@@ -1,0 +1,279 @@
+:root {
+    --bg: #ffffff;
+    --panel: #f5f2fc;
+    --text: #1b1720;
+    --muted: #5c5566;
+    --accent: #6d28d9;
+    --accent-dark: #4c1d95;
+    --pop: #ff5a1f;
+    --border: #e6e1f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: var(--accent);
+    color: #ffffff;
+    padding: 72px 24px 40px;
+}
+
+.name {
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.role {
+    margin: 8px 0 0;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.nav {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.nav a:hover {
+    border-bottom-color: var(--pop);
+}
+
+/* Section shells */
+.section {
+    padding: 64px 24px;
+}
+
+.section-panel {
+    background-color: var(--panel);
+}
+
+.eyebrow {
+    margin: 0 0 6px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 24px;
+}
+
+/* About */
+.about p {
+    max-width: 60ch;
+    margin: 0 0 16px;
+    color: var(--muted);
+}
+
+.about .intro {
+    font-size: 1.25rem;
+    color: var(--text);
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 26px;
+    background-color: var(--pop);
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.cta:hover {
+    background-color: #e64a12;
+    transform: translateY(-2px);
+}
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-group {
+    flex: 1 1 220px;
+    padding: 24px;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.skill-group h3 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.skill-group ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skill-group li {
+    padding: 7px 0;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+}
+
+.skill-group li:last-child {
+    border-bottom: none;
+}
+
+/* Projects */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.project {
+    display: flex;
+    flex: 1 1 260px;
+    flex-direction: column;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-thumb {
+    display: block;
+    aspect-ratio: 3 / 2;
+    background-color: var(--panel);
+    overflow: hidden;
+}
+
+.project-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Interactive: the thumbnail image zooms slightly on card hover */
+.project:hover .project-thumb img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+}
+
+.project-info p {
+    margin: 0 0 14px;
+    color: var(--muted);
+}
+
+.project-link {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: var(--pop);
+}
+
+/* Footer */
+.footer {
+    padding: 56px 24px;
+    background-color: var(--text);
+    color: #ffffff;
+}
+
+.footer h2 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.footer p {
+    margin: 0 0 8px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer a {
+    color: var(--pop);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.footer a:hover {
+    border-bottom-color: var(--pop);
+}
+
+.footer .copyright {
+    margin-top: 24px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive: stack the card rows and ease the header on small screens */
+@media (max-width: 700px) {
+    .header {
+        padding: 48px 20px 32px;
+    }
+
+    .name {
+        font-size: 2.3rem;
+    }
+
+    .section {
+        padding: 44px 20px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        flex-direction: column;
+    }
+}
