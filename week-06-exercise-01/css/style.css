@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #111111;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 32px 0;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: normal;
+  line-height: 1em;
+  letter-spacing: -0.25rem;
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+ul {
+  margin-left: 32px;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #0066CC;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #004499;
+}
+
+code {
+  font-family: monospace;
+  background-color: #f5f5f5;
+  padding: 2px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.nav-simple {
+  position: fixed;
+  left: 32px;
+  top: 32px;
+  width: 200px;
+}
+
+.nav-simple ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-simple li {
+  margin-bottom: 8px;
+}
+
+.nav-simple a {
+  display: block;
+  padding: 8px 16px;
+  color: #6d28d9;
+  text-decoration: none;
+  background-color: #f5f2fc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: 4px solid #ff5a1f;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-simple a:hover {
+  background-color: #6d28d9;
+  color: #ffffff;
+}
+
+.nav-simple+main {
+  margin-left: 232px;
+}
+
+.nav-horizontal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1b1720;
+  padding: 0 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-horizontal ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-horizontal li {
+  margin-bottom: 0;
+}
+
+.nav-horizontal a {
+  display: block;
+  padding: 16px 0;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-horizontal a:hover {
+  color: #ff5a1f;
+}
+
+.nav-horizontal+main {
+  margin-top: 80px;
+}
+
+/* Third pattern: centered pill bar with a bold accent background */
+.nav-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #6d28d9;
+  padding: 12px 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.nav-custom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.nav-custom li {
+  margin-bottom: 0;
+}
+
+.nav-custom a {
+  display: block;
+  padding: 8px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-custom a:hover {
+  background-color: #ffffff;
+  color: #6d28d9;
+}
+
+.nav-custom+main {
+  margin-top: 80px;
+}
+
+@media (width >=480px) {}
+
+@media (width >=1024px) {}
